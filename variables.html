@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    1.
+let marks=prompt("marks");
+let age=prompt("age");
+if(marks>=90){
+    console.log("Grade A");
+    if(age<18){
+        console.log("Eligible for scholorship");
+    }
+} else if (marks>=70 && marks<=89){
+console.log("Grade B");
+if(age>21){
+    console.log("try agian next year");
+}
+else{
+    console.log("fail");
+}
+}
+2.
+let login =prompt("login status(yes or no):");
+let device =prompt("device status(mobile or desktop):");
+    if(login=="yes"){
+        if(device=="mobile"){
+            console.log("mobile Dashboard");
+        }
+        else{
+            console.log("device Dashboard");
+        }
+    }
+        else{
+        console.log("please login");
+     }
+  3.
+  
+  let cart=prompt("value");
+  if(cart>500){
+    let prime=prompt("status");
+    if(prime==="prime"){
+    console.log("20percent discount");
+  }else{
+let cupon=prompt("cupon(appiled,no appiled)");
+if(cupon=="applied"){
+console.log("10percent discount");
+  }
+  else{
+    console.log("5percent discount");
+  }
+}
+}else{
+  console.log("no discount");
+}
+
+
+4.
+let tempature=prompt("temp");
+let timeofday=prompt("day");
+if(tempature>35){
+    if(timeofday==="afternoon"){
+        console.log("Extreme Heat Warning");
+    }
+    else{
+        console.log("hot weather");
+    } 
+} else if (tempature>=25 &&tempture<=35){
+    console.log("normal");
+}
+else{
+    console.log("cold");
+}
+
+ 5.
+ let destination=prompt("city");
+ let passenger=prompt("senior")
+ if(destination=="metrocity"){
+    if(passenger=="senior"){
+        console.log("40percentoff");
+    }else{
+        console.log("fullfare");
+    }}
+    else{
+            if(passenger=="student"){
+                console.log("50percentoff");
+            }
+        
+    else{
+    console.log("fullfare")
+ }
+    }
+
+6.
+let language=prompt("lang");
+let timeofday=prompt("day");
+switch(language){
+    case"eng":language
+    if(timeofday=="morning"){
+        console.log("goodmorning");
+    }else{
+        console.log("goodevening");
+    }
+    break;
+    case"tel":language
+    if(timeofday=="morning"){
+        console.log("subodayam");
+    }else{
+        console.log("subasayantharam");
+    }
+    break;
+    case"hi":language
+    if(timeofday=="morning"){
+        console.log("subok");
+    }else{
+        console.log("sahamuk");
+    }
+    break;
+}
+
+7.
+let current=prompt("type");
+let amount=prompt("money");
+switch(current){
+    case "USD":amount
+    if(amount>1000){
+        console.log("add bonus amount");
+    }
+    else{
+        console.log(" standard conversion");
+    }
+    break;
+    case "EUR":amount
+    if(amount>1000){
+        console.log("add bonus amount");
+    }
+    else{
+        console.log(" standard conversion");
+    }
+    break;
+case "INR":amount
+    if(amount>1000){
+        console.log("add bonus amount");
+    }
+    else{
+        console.log(" standard conversion");
+    }
+    break;
+}
+
+
+8.
+let role=prompt("enter the role(admin,manger,employee)");
+let department=prompt("depart");
+   switch(role){
+    case"admin":department
+    if(department=="hr"){
+        console.log("edit acess granted");
+    }else{
+        console.log("view only acess");
+    }
+    break;
+    case"manager":department
+    if(department=="hr"){
+        console.log("edit acess granted");
+    }else{
+        console.log("view only acess");
+    }
+    break;
+    case"employee":department
+    if(department=="hr"){
+        console.log("edit acess granted");
+    }else{
+        console.log("view only acess");
+    }
+    break;
+   }  
+    
+9.
+let wheater=prompt("plan");
+let tempature=prompt("temp");
+switch(wheater){
+    case "rain":tempature
+    if(tempature=="below threshold"){
+        console.log("stay inside");
+    }
+    else{
+        console.log("wear protection");
+    }
+    break;
+   case "sunny":tempature
+    if(tempature=="below threshold"){
+        console.log("stay inside");
+    }
+    else{
+        console.log("wear protection");
+    }
+    break;
+    case "snow":tempature
+    if(tempature=="below threshold"){
+        console.log("stay inside");
+    }
+    else{
+        console.log("wear protection");
+    }
+   break;
+}
+  10.
+  let mobile=prompt("plan");
+  let user=prompt("student(yes/no)");
+  switch(mobile){
+    case "basic":mobile
+    if(user=="student"){
+        console.log("extra student applied");
+    }
+    else{
+        console.log("standard price applied");
+    }
+    break;
+    case "standard":mobile
+    if(user=="student"){
+        console.log("extra student applied");
+    }
+    else{
+        console.log("standard price applied");
+    }
+    break;
+    case "premium":mobile
+    if(user=="student"){
+        console.log("extra student applied");
+    }
+    else{
+        console.log("standard price applied");
+    }
+    break;
+  }
+11.
+let cart=prompt("value");
+let primestatus=prompt("prime(yes/no)");
+if(cart>1000){
+  if(primestatus=="yes"){
+    console.log("free delievery and 20 discount");
+  }else{
+      console.log("free delievery and 10 discount");
+    }
+  
+}else if(cart>500 && cart<=1000){
+  
+  if(primestatus=="yes"){
+    console.log("10percentdiscount");
+  }else{
+      console.log("delivery charge is 50 rupess");
+    }
+  }else{
+
+  if(cart<500){
+    console.log("no offer avaliable");
+   }
+  }
+
+12.
+let username=prompt("name");
+let password=prompt("pass");
+let otp=prompt("otp");
+if (username == "anusha"){
+  console.log("correct");
+  if(password=="anusha23"){
+    console.log("correct");
+    if(otp==1234){
+      console.log("login sucessfull");
+    }else{
+      console.log("invalid otp");
+    }
+  }else{
+      console.log("invalid credientials");
+    }
+  }
+    
+  13.
+  let select=prompt("option(light,dark,auto)");
+  if(selects="dark"){
+    console.log("aplied dark them applied");
+  }
+    else if(select="light"){
+      console.log("applied light them applied");
+    }
+      else if(selects="auto"){
+        let time=prompt("time(before6pm,after6pm)");
+        if(time=="before6"){
+          console.log("apply light theme");
+        }
+        else{
+          console.log("apply dark theme");
+        }
+    }
+  
+14.
+let age=prompt("number");
+let areainterst=prompt("area(coding,design,marketing)");
+if(age<18){
+  console.log("try beginer bootcamp");
+}else{
+  switch(areainterst){
+    case "coding":age
+    console.log("full stack development course");
+    break;
+ case "design":age
+    console.log("UIUXDesigncourse");
+    break;
+    case "marketing":age
+    console.log("digitalmarketingcourse");
+    break;
+  }
+}
+
+15.
+let language=prompt("lang(en,hi,es,fr)");
+let region=prompt("region(india,other)");
+switch(language){
+  case "en":language
+  if(language=="en"){
+    console.log("hello namasthe");
+    if(region=="india"){
+      console.log("hello namasthe");
+    }
+  }
+ break;
+ case "hi":language
+  if(language=="hi"){
+    console.log("namasthe");
+  }
+break;
+case "fr":language
+  if(language=="fr"){
+    console.log("bonjour");
+  }
+break;
+case "es":language
+  if(language==es){
+    console.log("hola");
+  }
+  break;
+}
+
+16.
+let product=prompt("type(fragile, express, standard)");
+let city=prompt("city(metro or non-metro)");
+switch(product){
+  case "fragile":
+  if(city=="metro"){
+    console.log("2days");
+  }else if(citytype=="nonmetro"){
+  console.log("4days");
+}
+break;
+ case"express":
+  if(city=="metro"){
+    console.log("1days");
+  }else if(citytype=="nonmetro"){
+  console.log("2days");
+}
+
+break;
+ case"standard":
+  if(city=="metro"){
+    console.log("3days");
+  }else if(citytype=="nonmetro"){
+  console.log("5days");
+  break;
+}
+}
+
+17.
+let totalamount=prompt("amount");
+let numberofpeople=prompt("people");
+let promocode=prompt("promo code (FLAT50 or PERCENT10)");
+if(promocode=="FLAT50"){
+  totalamount=totalamount-50;
+  console.log("subtract 50rupess from total");
+}
+ else if(promocode=="PERCENT10"){
+  totalamount=totalamount-(totalamount*0.1);
+  console.log("subtract 10percent from total");
+}
+else{
+  console.log("no discount");
+}
+18.
+let amount=prompt("amount");
+let currency=prompt("currency (INR, USD, EUR)");
+let promocode=prompt("code");
+switch(currency){
+  case"INR":
+  if(promocode==="FLAT100"){
+    console.log("Subtract 100 rupees or 10 dollars or 10 euros")
+  }
+  else if(promocode==="PERCENT10"){
+    console.log("Apply 10 percent discount")
+  }
+  break;
+  case"USD":
+  if(promocode==="FLAT100"){
+    console.log("Subtract 100 rupees or 10 dollars or 10 euros")
+  }
+  else if(promocode==="PERCENT10"){
+    console.log("Apply 10 percent discount")
+  }
+  break;
+  case"EUR":
+  if(promocode==="FLAT100"){
+    console.log("Subtract 100 rupees or 10 dollars or 10 euros")
+  }
+ else if(promocode==="PERCENT10"){
+    console.log("Apply 10 percent discount")
+    break;
+ }
+}
+19.
+let marks=prompt("mark");
+let section=prompt("section(a,b,c)");
+if(marks>900){
+  if(section=="A"){
+    console.log("Outstanding in Section A");
+  }
+  else if(section=="B"){
+    console.log("Excellent in Section B");
+  }
+  else if (marks>70 && marks<89)
+{
+    console.log("good performance");
+  }
+  if(marks<70){
+    console.log("need improvement");
+  }
+}
+20.
+let age=prompt("age");
+let gender=prompt("gender(male,female)");
+if(age<13){
+  if(gender=="male"){
+    console.log("Hey Young Boy");
+  }else{
+    if(gender=="female"){
+    console.log("Hey Little Girl");
+    }
+  }
+  }
+else{
+if(age>13&&age<19){
+  console.log("hello teen");
+}
+else{
+  if(age>=20){
+    console.log("welcome adult");
+  }
+}
+}
+  </script>
+ </body>
+ </html>
+
+
+
+
+
